@@ -1,0 +1,44 @@
+<hr>
+<p class="querys">List where status is 'ok' and version greather than 2.0.0 order by 'name':</p>
+<table class="agrList">
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Period</th>
+        <th>Version</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let agr of query1">
+            <td>{{agr.name}}</td>
+            <td>{{agr.description}}</td>
+            <td>{{agr.agreementType}}</td>
+            <td>{{agr.status}}</td>
+            <td>{{agr.agreementPeriod}}</td>
+            <td>{{agr.version}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<p class="querys">List where agreement type is 'agreement', status is 'pending', period less or equal than 7, order by 'period' and limit to 3:</p>
+<table class="agrList">
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Period</th>
+        <th>Version</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let agr of query2">
+            <td>{{agr.name}}</td>
+            <td>{{agr.description}}</td>
+            <td>{{agr.agreementType}}</td>
+            <td>{{agr.status}}</td>
+            <td>{{agr.agreementPeriod}}</td>
+            <td>{{agr.version}}</td>
+        </tr>
+    </tbody>
+</table>

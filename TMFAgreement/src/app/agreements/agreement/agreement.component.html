@@ -1,0 +1,84 @@
+
+<form #form="ngForm" autocomplete="off" (submit)="add(form)">
+    
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+
+    <table>
+        <tr>
+            <td>
+                <label for="name">Name:</label>
+            </td>
+            <td>
+                <input id="name" name="name" #name="ngModel" [(ngModel)]="service.formData.name" required>
+            </td>
+            <td>
+                <div *ngIf="name.invalid && name.touched" class="required">*required</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="description">Description:</label>
+            </td>
+            <td>
+                <input id="description" name="description" #description="ngModel" [(ngModel)]="service.formData.description" required>
+            </td>
+            <td>
+                <div *ngIf="description.invalid && description.touched" class="required">*required</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="agreementType">Type:</label>
+            </td>
+            <td>
+                <input id="agreementType" name="agreementType" #agreementType="ngModel" [(ngModel)]="service.formData.agreementType" required>
+            </td>
+            <td>
+                <div *ngIf="agreementType.invalid && agreementType.touched" class="required">*required</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="status">Status:</label>
+            </td>
+            <td>
+                <input id="status" name="status" #status="ngModel" [(ngModel)]="service.formData.status" required>
+            </td>
+            <td>
+                <div *ngIf="status.invalid && status.touched" class="required">*required</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="agreementPeriod">Period:</label>
+            </td>
+            <td>
+                <input type="number" id="agreementPeriod" name="agreementPeriod" #agreementPeriod="ngModel" [(ngModel)]="service.formData.agreementPeriod" required>
+            </td>
+            <td>
+                <div *ngIf="agreementPeriod.invalid && agreementPeriod.touched" class="required">*required</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="version">Version:</label>
+            </td>
+            <td>
+                <input id="version" name="version" #version="ngModel" [(ngModel)]="service.formData.version" required>
+            </td>
+            <td>
+                <div *ngIf="version.invalid && version.touched" class="required">*required</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" [disabled]="form.invalid" class="button">Submit</button>
+            </td>
+            <td>
+                <button type="reset" class="button">Reset</button>
+            </td>
+        </tr>
+    </table>
+
+
+</form>

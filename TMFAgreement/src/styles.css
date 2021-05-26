@@ -1,0 +1,84 @@
+h1.header {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+nav.menu a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: inline;
+}
+
+nav.menu a:hover{
+    background-color: aqua;
+}
+
+nav a.active {
+    color: red;
+}
+
+.button {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+
+.button:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+a.delAgr {
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+table.agrList {
+    width: 100%;
+}
+
+
+table.agrList tr:nth-child(odd) {
+    background-color: #f0f0f5;
+}
+
+table.agrList tr:hover {
+    background-color: #80b5ea;
+}
+
+div.required {
+    font-size: 16px;
+    color: red;
+}
+
+p.querys {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}

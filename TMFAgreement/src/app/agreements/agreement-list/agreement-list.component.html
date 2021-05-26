@@ -1,0 +1,22 @@
+<table class="agrList">
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Peroid</th>
+        <th>Version</th>
+        <th>*Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let agr of list">
+            <td (click)="update(agr)">{{agr.name}}</td>
+            <td (click)="update(agr)">{{agr.description}}</td>
+            <td (click)="update(agr)">{{agr.agreementType}}</td>
+            <td (click)="update(agr)">{{agr.status}}</td>
+            <td (click)="update(agr)">{{agr.agreementPeriod}}</td>
+            <td (click)="update(agr)">{{agr.version}}</td>
+            <td><a class="delAgr" (click)="delete(agr.id, agr.name)">Delete</a></td>
+        </tr>
+    </tbody>
+</table>
